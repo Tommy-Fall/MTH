@@ -1,0 +1,35 @@
+.container {
+    margin: 1em 5em 1em 5em;
+}
+
+.option_all {
+    margin-bottom: 1em;
+    color: hsl(128, 71%, 39%);
+    border: 1px solid hsl(128, 71%, 39%);
+    background: hsl(128, 71%, 80%);
+    padding: 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.option_all:active {
+    background: hsl(128, 71%, 39%);
+    color: white;
+}
+
+.option {
+    margin-bottom: 1em;
+    color: hsl(212, 71%, 52%);
+    border: 1px solid hsl(212, 71%, 52%);
+    background: hsl(212, 71%, 82%);
+    padding: 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.option:active {
+    background: hsl(212, 71%, 52%);
+    color: white;
+}

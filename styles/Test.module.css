@@ -1,0 +1,83 @@
+.container {}
+
+.operation {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.input{
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    top: 18%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.wrong{
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    grid-gap: 5px;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: hsl(0, 81%, 47%);
+    padding: 0.5em;
+    color: white;
+    border: 3px solid hsl(0, 81%, 30%);
+}
+.wrong>span{
+    font-weight: bold;
+    font-size: 1.5em
+}
+
+.keypad{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid hsl(212, 71%, 70%);
+    grid-gap: 1px;
+    background-color: hsl(212, 71%, 70%);
+}
+
+.keypad>button {
+    height: 3.2em;
+    color: hsl(212, 71%, 60%);
+    font-size: 2em;
+    background-color: hsl(212, 71%, 82%);
+}
+
+
+
+.keypad>button:active {
+    color: white;
+    background-color: hsl(212, 71%, 60%);
+}
+
+.keypad>button:nth-child(10){
+    color: hsl(2, 71%, 39%);
+    background: hsl(2, 71%, 60%);
+}
+.keypad>button:nth-child(10):active{
+    color: white;
+    background: hsl(2, 71%, 39%);
+}
+
+
+.keypad>button:nth-child(12){
+    color: hsl(128, 71%, 39%);
+    background: hsl(128, 71%, 80%);
+}
+.keypad>button:nth-child(12):active{
+    color: white;
+    background: hsl(128, 71%, 39%);
+}
