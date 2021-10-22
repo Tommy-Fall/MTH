@@ -15,9 +15,8 @@ const Test = (props) => {
     const [summary, setSummary] = useState([])
 
     const update_operation = () => {
-        console.log(props.number)
-        if (typeof Number(props.number) === 'number' && checked_operations.length === 11) return router.push('/')
-        else if (checked_operations.length === 101) return router.push('/')
+        // if (typeof Number(props.number) === 'number' && checked_operations.length === 11) return router.push('/')
+        // if (checked_operations.length === 101) return router.push('/')
 
         setWrong(null)
         setInput('')
@@ -49,15 +48,6 @@ const Test = (props) => {
         if ((operation[0] * operation[1]) === Number(input)) update_operation()
         else {
             setWrong(operation[0] * operation[1])
-
-            // console.log(operation)
-            // console.log(summary[summary.length - 1] , 'fefe')
-            // if ((operation[0] !== summary[summary.length - 1][0]) && (operation[1] !== summary[summary.length - 1][1])) {
-            //     let newItem = [operation[0], operation[1]]
-            //     let summaryCopy = summary
-            //     summaryCopy.push(newItem)
-            //     setSummary(summaryCopy)
-            // }
         }
     }
 
