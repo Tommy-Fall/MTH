@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <button onClick={()=>router.push('/multiplication')} className={styles.option}>Multiplication</button>
+      <button onClick={()=>router.push('/substraction')} className={styles.option}>Substraction</button>
     </div>
   )
 }
